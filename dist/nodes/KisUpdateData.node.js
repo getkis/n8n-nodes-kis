@@ -122,17 +122,6 @@ class KisUpdateData {
                 const id = this.getNodeParameter('id', i);
                 const jsonParameters = this.getNodeParameter('jsonParameters', i);
                 const document = GenericFunctions_1.getFieldsFromParameters.call(this, i, jsonParameters);
-                console.log('--- UPDATE REQUEST DEBUG ---');
-                console.log('Collection:', collection);
-                console.log('Document ID:', id);
-                console.log('Request Body:', JSON.stringify({
-                    data_handler: {
-                        collection_name: collection,
-                        documents: [{ ...document }],
-                    },
-                }, null, 2));
-                console.log('Authorization:', auth);
-                console.log('----------------------------');
                 const response = await this.helpers.httpRequest({
                     method: 'PUT',
                     url: `${creds.baseUrl}/api_token_access/data_handlers/${id}`,
