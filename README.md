@@ -1,6 +1,6 @@
 # n8n-nodes-kis
 
-Community node package for **KIS (getkis.io)** in **n8n**.
+Community node package for **KIS ([getkis](https://kis.work))** in **n8n**.
 
 This package provides nodes to interact with KIS collections
 (datatables) and documents directly from n8n workflows.
