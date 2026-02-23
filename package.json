@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-kis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for KIS (https://kis.work)",
   "license": "MIT",
   "keywords": [
@@ -48,7 +48,7 @@
     ]
   },
   "homepage": "https://github.com/dilawarudemy/n8n-nodes-kis#readme",
-"bugs": {
-  "url": "https://github.com/dilawarudemy/n8n-nodes-kis/issues"
-}
+  "bugs": {
+    "url": "https://github.com/dilawarudemy/n8n-nodes-kis/issues"
+  }
 }
