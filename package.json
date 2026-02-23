@@ -9,6 +9,11 @@
     "kis",
     "getkis"
   ],
+  "author": {
+  "name": "Dilawar",
+  "email": "dilawarudemy@gmail.com",
+  "url": "https://github.com/dilawarudemy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dilawarudemy/n8n-nodes-kis.git"
