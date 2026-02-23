@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-kis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for KIS (https://kis.work)",
   "license": "MIT",
   "keywords": [
@@ -10,9 +10,9 @@
     "getkis"
   ],
   "author": {
-  "name": "Dilawar",
-  "email": "dilawarudemy@gmail.com",
-  "url": "https://github.com/dilawarudemy"
+    "name": "Dilawar",
+    "email": "dilawarudemy@gmail.com",
+    "url": "https://github.com/dilawarudemy"
   },
   "repository": {
     "type": "git",
