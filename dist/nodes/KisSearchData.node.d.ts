@@ -4,7 +4,6 @@ export declare class KisSearchData implements INodeType {
     methods: {
         loadOptions: {
             getCollections(this: ILoadOptionsFunctions): Promise<import("n8n-workflow").INodePropertyOptions[]>;
-            getDocumentIds(this: ILoadOptionsFunctions): Promise<import("n8n-workflow").INodePropertyOptions[]>;
         };
     };
     execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]>;

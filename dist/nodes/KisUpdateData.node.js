@@ -122,6 +122,7 @@ class KisUpdateData {
                 const id = this.getNodeParameter('id', i);
                 const jsonParameters = this.getNodeParameter('jsonParameters', i);
                 const document = GenericFunctions_1.getFieldsFromParameters.call(this, i, jsonParameters);
+                document._id = id;
                 const response = await this.helpers.httpRequest({
                     method: 'PUT',
                     url: `${creds.baseUrl}/api_token_access/data_handlers/${id}`,
@@ -133,7 +134,7 @@ class KisUpdateData {
                     body: {
                         data_handler: {
                             collection_name: collection,
-                            documents: [{ ...document }],
+                            documents: [document],
                         },
                     },
                     json: true,

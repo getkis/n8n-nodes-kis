@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, ILoadOptionsFunctions, INodePropertyOptions } from 'n8n-workflow';
+import type { IExecuteFunctions, ILoadOptionsFunctions, INodePropertyOptions,ITriggerFunctions, IPollFunctions } from 'n8n-workflow';
 import { NodeApiError } from 'n8n-workflow';
 
 export type KisCreds = {
@@ -7,7 +7,7 @@ export type KisCreds = {
 	secret: string;
 };
 
-export async function kisGetAuthorization(this: IExecuteFunctions | ILoadOptionsFunctions): Promise<string> {
+export async function kisGetAuthorization(this: IExecuteFunctions | ILoadOptionsFunctions | ITriggerFunctions |  IPollFunctions ): Promise<string> {
 	const creds = (await this.getCredentials('kisApi')) as unknown as KisCreds;
 
 	const baseUrl = (creds.baseUrl || '').replace(/\/+$/, '');
@@ -215,4 +215,3 @@ export async function loadCollectionFields(this: ILoadOptionsFunctions) {
 
 	return out;
 }
-

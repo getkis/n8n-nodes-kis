@@ -141,7 +141,7 @@ export class KisUpdateData implements INodeType {
 				const jsonParameters = this.getNodeParameter('jsonParameters', i) as boolean;
 
 				const document = getFieldsFromParameters.call(this, i, jsonParameters);
-
+				(document as any)._id = id;
 
 				const response = await this.helpers.httpRequest({
 					method: 'PUT',
@@ -154,7 +154,7 @@ export class KisUpdateData implements INodeType {
 					body: {
 						data_handler: {
 							collection_name: collection,
-							documents: [{ ...document }],
+							documents: [document],
 						},
 					},
 					json: true,
