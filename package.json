@@ -12,11 +12,11 @@
   "author": {
     "name": "KIS",
     "email": "joachim@getkis.io",
-    "url": "https://github.com/dilawarudemy"
+    "url": "https://github.com/getkis"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dilawarudemy/n8n-nodes-kis.git"
+    "url": "git+https://github.com/getkis/n8n-nodes-kis.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -52,8 +52,8 @@
       "dist/nodes/KisGetDataTrigger.node.js"
     ]
   },
-  "homepage": "https://github.com/dilawarudemy/n8n-nodes-kis#readme",
+  "homepage": "https://github.com/getkis/n8n-nodes-kis#readme",
   "bugs": {
-    "url": "https://github.com/dilawarudemy/n8n-nodes-kis/issues"
+    "url": "https://github.com/getkis/n8n-nodes-kis/issues"
   }
 }
